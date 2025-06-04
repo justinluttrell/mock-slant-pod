@@ -1,0 +1,80 @@
+[
+	{
+		"filament": "PLA BLACK",
+		"hexColor": "000000",
+		"colorTag": "black",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PLA WHITE",
+		"hexColor": "FFFFFF",
+		"colorTag": "white",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PLA RED",
+		"hexColor": "FF0000",
+		"colorTag": "red",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PLA BLUE",
+		"hexColor": "0000FF",
+		"colorTag": "blue",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PLA GREEN",
+		"hexColor": "00FF00",
+		"colorTag": "green",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PLA YELLOW",
+		"hexColor": "FFFF00",
+		"colorTag": "yellow",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PLA ORANGE",
+		"hexColor": "FFA500",
+		"colorTag": "orange",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PLA PURPLE",
+		"hexColor": "800080",
+		"colorTag": "purple",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PLA GREY",
+		"hexColor": "808080",
+		"colorTag": "grey",
+		"profile": "PLA"
+	},
+	{
+		"filament": "PETG NATURAL",
+		"hexColor": "F5F5DC",
+		"colorTag": "natural",
+		"profile": "PETG"
+	},
+	{
+		"filament": "PETG BLACK",
+		"hexColor": "000000",
+		"colorTag": "black",
+		"profile": "PETG"
+	},
+	{
+		"filament": "PETG WHITE",
+		"hexColor": "FFFFFF",
+		"colorTag": "white",
+		"profile": "PETG"
+	},
+	{
+		"filament": "PETG CLEAR",
+		"hexColor": "FFFFFF",
+		"colorTag": "clear",
+		"profile": "PETG"
+	}
+] 

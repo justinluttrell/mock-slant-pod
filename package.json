@@ -1,0 +1,60 @@
+{
+	"name": "mock-slant-api",
+	"author": "https://github.com/justinluttrell",
+	"version": "1.0.0",
+	"description": "Lightweight Docker container providing a mock implementation of the Slant3D Print Factory API",
+	"main": "src/index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "bun run --hot src/index.ts",
+		"start": "bun run src/index.ts",
+		"build": "bun build src/index.ts --outdir dist --target bun",
+		"build:web": "cd src/web && bun run build",
+		"test": "bun test",
+		"docker:build": "docker build -t mock-slant-api .",
+		"docker:build:dev": "docker build -f Dockerfile.dev -t mock-slant-api:dev .",
+		"docker:run": "docker run -p 4000:4000 --env-file .env mock-slant-api",
+		"docker:run:dev": "docker run -p 3001:3001 -p 5173:5173 -v $(pwd)/src:/app/src --env-file .env mock-slant-api:dev",
+		"docker:up": "docker-compose up -d",
+		"docker:up:dev": "docker-compose --profile dev up -d",
+		"docker:down": "docker-compose down",
+		"docker:logs": "docker-compose logs -f",
+		"type-check": "tsc --noEmit",
+		"lint": "eslint src --ext .ts,.tsx",
+		"format": "prettier --write src/**/*.{ts,tsx}"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.12.2",
+		"hono": "^4.6.3",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.1.10",
+		"@types/node": "^22.7.4",
+		"@types/react": "^18.3.11",
+		"@types/react-dom": "^18.3.0",
+		"@typescript-eslint/eslint-plugin": "^8.8.0",
+		"@typescript-eslint/parser": "^8.8.0",
+		"@vitejs/plugin-react": "^4.3.2",
+		"eslint": "^9.12.0",
+		"prettier": "^3.3.3",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"typescript": "^5.6.2",
+		"vite": "^5.4.8"
+	},
+	"keywords": [
+		"api",
+		"mock",
+		"slant3d",
+		"3d-printing",
+		"bun",
+		"hono",
+		"typescript",
+		"docker"
+	],
+	"license": "MIT",
+	"engines": {
+		"bun": ">=1.0.0"
+	}
+} 
