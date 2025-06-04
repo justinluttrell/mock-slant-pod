@@ -4,6 +4,9 @@
 
 A lightweight, containerized mock server that provides **1:1 API format compatibility** with the official Slant3D API. Built with Bun + Hono + TypeScript for blazing-fast development testing.
 
+![image](https://github.com/user-attachments/assets/1ea433e1-ca86-4006-9a1c-7628dc67d0b0)
+
+
 ## ✨ Features
 
 - **🎯 Official Format Alignment**: Exact request/response formats matching production Slant3D API
